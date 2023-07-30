@@ -21,7 +21,8 @@ A cross-site scripting attack is possible, although finicky, returning the admin
 
 There seems to be SQL-Injection present in the user database lookup, although I have yet to go any further. I am conflating both these things together and I forget what I actually did ut oh well... continuing.
 
-➜  Bankrobber git:(main) ✗ sudo nmap -oA nmap/found-TCP-detailed 
+➜  Bankrobber git:(main) ✗
+	sudo nmap -oA nmap/found-TCP-detailed 
 	-p$(cat nmap/allports-TCP-initial.nmap | grep open | awk '{ print $1 }' | awk '{ print $0+0}' | sed ':a;N;$!ba;s/\n/,/g')
 	-sCV -T4 --min-rate 5000 -Pn 10.10.10.154
  
