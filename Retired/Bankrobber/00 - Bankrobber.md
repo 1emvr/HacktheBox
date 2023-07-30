@@ -277,7 +277,7 @@ libraries are installed on your system.
   + Windows 7, Windows 8, Windows 10
 ```
 
-There is some conflict between what the two articles claim is the proper directory for custom php scripts. However, with a bit of playing around and reading the XAMPP Github it's pretty clear that the custom scripts are likely within `htdocs.` I was able to grab the homepage's source code.
+There is some conflict between what the two articles claim is the proper directory for custom php scripts. However, with a bit of playing around and reading the XAMPP Github it's pretty clear that the custom scripts are likely within `C:\xampp\htdocs.` I was able to grab the homepage's source code.
 
 ```
 HTTP/1.1 200 OK
