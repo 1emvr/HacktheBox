@@ -1,0 +1,155 @@
+{
+  "main": {
+    "id": "9dc72aa9ba1eb6fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "22c4ee3f1e92ed9d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b13fcfd69fecd0fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Retired/Bankrobber/00 - Bankrobber.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a6ba3bb851f6458d",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb41dc5dcf5b605f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56548f002c031d6a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "21f3c3f470d5c949",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6a24b80dfced010d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "34dd8adc9abeec3b",
+    "type": "split",
+    "children": [
+      {
+        "id": "5eaf2fc6f2e2c033",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90c731fa0e5c7a9f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Retired/Bankrobber/00 - Bankrobber.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cf0d75a1dd9dd7e3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Retired/Bankrobber/00 - Bankrobber.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b25fca968c9bfe80",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "35c495d83731735e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Retired/Bankrobber/00 - Bankrobber.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b13fcfd69fecd0fe",
+  "lastOpenFiles": [
+    "Retired/Bankrobber/00 - Bankrobber.md",
+    "Retired/Bankrobber",
+    "Retired"
+  ]
+}
