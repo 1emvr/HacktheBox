@@ -72,7 +72,7 @@ Nmap done: 1 IP address (1 host up) scanned in 53.85 seconds
 
 `admin:Hopelessromantic`
 
-A regular union select statement reveals version `MariaDB-10.1.38` in field 2:`
+A regular union select statement reveals version `MariaDB-10.1.38` in field 2:
 ```http
 POST /admin/search.php HTTP/1.1
 Host: 10.10.10.154
