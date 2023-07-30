@@ -213,5 +213,7 @@ Content-Type: text/html; charset=UTF-8
 		</table>
 ```
 
-With this kind of file read, it could be possible to fuzz for common file names. However, I'm not going to do that because it seems silly in this context.
+With this kind of file read, it could be possible to fuzz for common file names. However, this wouldn't make sense in this context. I want the source code for any XAMPP php scripts.
+
+
 
