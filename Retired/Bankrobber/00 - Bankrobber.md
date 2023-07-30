@@ -367,4 +367,4 @@ Since I lost all my notes previously, including directory fuzzing and nmap scans
 ?>
 ```
 
-It's pretty obvious that the problem is with the $_SERVER check in `backdoorchecker.php`, where it looks for a localhost ip address.
+It's pretty obvious that the problem is with the $_SERVER check in `backdoorchecker.php`, where it looks for a localhost ip address. I honestly have no idea how this could be done.
