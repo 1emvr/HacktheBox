@@ -366,3 +366,5 @@ Since I lost all my notes previously, including directory fuzzing and nmap scans
 	}
 ?>
 ```
+
+It's pretty obvious that the problem is with the 3rd block of code in `backdoorchecker.php`, where the environment check looks for a localhost ip address.
