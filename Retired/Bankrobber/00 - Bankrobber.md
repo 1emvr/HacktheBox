@@ -299,7 +299,7 @@ Content-Length: 8781
 <...SNIP...>
 ```
 
-Since I lost all my notes previously, including directory fuzzing and nmap scans, I simply looked at a writeup for all the available paths :^) (because I'm lazy and I hate waiting for scans to finish... fuck it).  The `/admin/` directory contains the source for `backdoorchecker.php:`
+Since I lost all my notes previously, including directory fuzzing and nmap scans, I simply looked at a writeup for all the available paths for the E-Coin website :^) (because I'm lazy and I hate waiting for scans to finish... fuck it).  The `/admin/` directory contains the source for `backdoorchecker.php:`
 ```php
 	<tr>
 		    <td><?php
