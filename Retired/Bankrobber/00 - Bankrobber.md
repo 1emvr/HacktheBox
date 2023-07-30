@@ -7,7 +7,7 @@
 10.10.10.154
 
 ## Nmap
-```nmap
+```bash
 I wiped out disk without backing up notes like an idiot... 
 picking up from web-admin access
 
@@ -17,7 +17,7 @@ Esentially, there is a database user search and and E-Coin transfer service.
 The transfer service is manually reviewed by an administrator. 
 
 The filed inputs do not validate/sanitize.
-A cross-site scripting attack is possible, although finicky, returning the administrator's cookie within the response headers.
+A cross-site scripting attack is possible, although finicky, returning the administrators cookie within the response headers.
 
 There seems to be SQL-Injection present in the user database lookup, although I have yet to go any further. I am conflating both these things together and I forget what I actually did ut oh well... continuing.
 
@@ -93,7 +93,8 @@ term=1'union slect user,password,3 from mysql.user--
 hash: *F435725A173757E57BD36B09048B8B610FF4D0C4
 ```
 
-SHA-1 hash decodes to `Welkom1!`. This could be either admin or gio's password. Connections aren't permitted to the MySQL service from an external IP. Localhost only:
+SHA-1 hash decodes to `Welkom1!`. This could be either admin or gio's password. 
+Connections aren't permitted to the MySQL service from an external IP. Localhost only:
 ```bash
 ➜  loot git:(main) ✗ mysql -u 'gio' -p 'Welkom1!' -h 10.10.10.154
 mysql: Deprecated program name. It will be removed in a future release, use '/usr/bin/mariadb' instead
@@ -102,4 +103,4 @@ Enter password:
 ERROR 1130 (HY000): Host '10.10.14.2' is not allowed to connect to this MariaDB server
 ```
 
-
+This password does not work on SMB. 
