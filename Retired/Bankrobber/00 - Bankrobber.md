@@ -215,8 +215,54 @@ Content-Type: text/html; charset=UTF-8
 
 With this kind of file read, it could be possible to fuzz for common file names. However, this wouldn't make sense in this context. I want the source code for any XAMPP php scripts.
 
-From the Apache version in the response, it seems like the XAMPP version is `XAMPP release 7.1.28 , 7.2.17 or 7.3.4:` I'll need to find some source files for XAMPP and try to enumerate where I can find these custom php scripts used on the site.
+From the Apache version in the response, it seems like the XAMPP version is `XAMPP release 7.1.28 , 7.2.17 or 7.3.4:` I'll need to find some source for the XAMPP directory tree and try to enumerate where I can find these custom php scripts used on the site.
 
+```http
+C:\xampp\readme_en.txt
+
+HTTP/1.1 200 OK
+Date: Sun, 30 Jul 2023 09:11:03 GMT
+Server: Apache/2.4.39 (Win64) OpenSSL/1.1.1b PHP/7.3.4
+X-Powered-By: PHP/7.3.4
+Content-Length: 7535
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<table width='90%'><tr><th>ID</th><th>User</th></tr>
+		<tr>
+		    <td>1</td>
+		    <td>admin</td>
+		 </tr>
+		
+		<tr>
+		    <td>###### ApacheFriends XAMPP Version 7.3.4 ######
+
+Important! PHP in this package needs the Microsoft Visual C++ 2015 Redistributable package from
+http://www.microsoft.com/en-us/download/. Please ensure that the VC++ 2015 runtime
+libraries are installed on your system.
+
+  + Apache 2.4.39
+  + MariaDB 10.1.38
+  + PHP 7.3.4 (VC15 X86 64bit thread safe) + PEAR
+  + phpMyAdmin 4.8.5
+  + OpenSSL 1.1.0g
+  + ADOdb 518a
+  + Mercury Mail Transport System v4.63 (not included in the portable version)
+  + FileZilla FTP Server 0.9.41 (not included in the portable version)
+  + Webalizer 2.23-04 (not included in the portable version)
+  + Strawberry Perl 5.16.3.1 Portable
+  + Tomcat 7.0.92
+  + XAMPP Control Panel Version 3.2.3.
+  + XAMPP mailToDisk 1.0 (write emails via PHP on local disk in <xampp>\mailoutput. Activated in the php.ini as mail default.)
+
+---------------------------------------------------------------
+
+* System Requirements:
+
+  + 64 MB RAM (RECOMMENDED)
+  + 750 MB free fixed disk
+  + Windows 7, Windows 8, Windows 10
+```
 
 
 
