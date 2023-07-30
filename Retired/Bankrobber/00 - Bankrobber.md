@@ -1,3 +1,5 @@
+# Bankrobber
+
 - Difficulty: "Insane"
 - Platform: Windows
 - 10.10.10.154
@@ -6,7 +8,7 @@
 ```nmap
 I wiped out disk without backing up notes like an idiot... picking up from web-admin access
 
-Rundown:
+The Rundown:
 
 Esentially, there is a database user search and and E-Coin transfer service. The transfer service is manually reviewed by an administrator. The filed inputs do not validate/sanitize.
 
