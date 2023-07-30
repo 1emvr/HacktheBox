@@ -104,7 +104,9 @@ ERROR 1130 (HY000): Host '10.10.14.2' is not allowed to connect to this MariaDB 
 ```
 
 This password does not work on SMB. 
-A possibility would be to capture an NTLM hash since mysql is available.
+
+## NTLM Stealing from insecure file_load in SQL
+A possibility would be to capture an NTLM hash since SQLI is present.
 
 Resources: 
 https://book.hacktricks.xyz/windows-hardening/ntlm/places-to-steal-ntlm-creds
