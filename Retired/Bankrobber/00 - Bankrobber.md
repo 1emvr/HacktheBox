@@ -215,5 +215,5 @@ Content-Type: text/html; charset=UTF-8
 
 With this kind of file read, it could be possible to fuzz for common file names. However, this wouldn't make sense in this context. I want the source code for any XAMPP php scripts.
 
-
+From the Apache version it seems like the XAMPP version is `XAMPP release 7.1.28 , 7.2.17 or 7.3.4`
 
