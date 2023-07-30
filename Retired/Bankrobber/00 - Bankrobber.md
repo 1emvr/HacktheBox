@@ -217,6 +217,7 @@ With this kind of file read, it could be possible to fuzz for common file names.
 
 From the Apache version in the response, it seems like the XAMPP version is `XAMPP release 7.1.28 , 7.2.17 or 7.3.4:` I'll need to find some source for the XAMPP directory tree and try to enumerate where I can find these custom php scripts used on the site.
 
+- https://github.com/xampp-phoenix/xampp
 ```http
 C:\xampp\readme_en.txt
 
