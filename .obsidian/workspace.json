@@ -146,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "56548f002c031d6a",
+  "active": "b13fcfd69fecd0fe",
   "lastOpenFiles": [
+    "Retired/Bankrobber/loot/ntlm.txt",
     "screenshots",
     "Retired/Bankrobber/nmap/found-TCP-detailed.xml",
     "Retired/Bankrobber/nmap/found-TCP-detailed.gnmap",
@@ -159,7 +160,6 @@
     "Retired/Bankrobber/loot/hash.txt",
     "Retired/Bankrobber/loot",
     "Pasted image 20230730021549.png",
-    "autopush.sh",
     "README.md",
     "Retired/Bankrobber/00 - Bankrobber.md"
   ]
