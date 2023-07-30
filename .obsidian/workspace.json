@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Retired/Bankrobber/00 - Bankrobber.md",
+                "file": "Retired/Bankrobber/credentials.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Retired/Bankrobber/00 - Bankrobber.md",
+                "file": "Retired/Bankrobber/credentials.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Retired/Bankrobber/00 - Bankrobber.md",
+                "file": "Retired/Bankrobber/credentials.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Retired/Bankrobber/00 - Bankrobber.md"
+                "file": "Retired/Bankrobber/credentials.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "b13fcfd69fecd0fe",
   "lastOpenFiles": [
+    "Retired/Bankrobber/00 - Bankrobber.md",
+    "Retired/Bankrobber/credentials.md",
     "Retired/Bankrobber/loot/ntlm.txt",
     "screenshots",
     "Retired/Bankrobber/nmap/found-TCP-detailed.xml",
@@ -158,9 +160,7 @@
     "Retired/Bankrobber/nmap/allports-TCP-initial.nmap",
     "Retired/Bankrobber/nmap",
     "Retired/Bankrobber/loot/hash.txt",
-    "Retired/Bankrobber/loot",
     "Pasted image 20230730021549.png",
-    "README.md",
-    "Retired/Bankrobber/00 - Bankrobber.md"
+    "README.md"
   ]
 }
