@@ -109,8 +109,8 @@ This password does not work on SMB.
 A possibility would be to capture an NTLM hash since SQLI is present.
 
 Resources: 
-https://book.hacktricks.xyz/windows-hardening/ntlm/places-to-steal-ntlm-creds
-https://osandamalith.com/2017/02/03/mysql-out-of-band-hacking/
+- https://book.hacktricks.xyz/windows-hardening/ntlm/places-to-steal-ntlm-creds
+- https://osandamalith.com/2017/02/03/mysql-out-of-band-hacking/
 
 Querying `term=1'union select @@secure_file_priv,2,3;-- -` outputs nothing in field 1, indicating that the secure file privilege parameter is not effective.
 I tried the example by osanda but it seemed to not work in this case. 
