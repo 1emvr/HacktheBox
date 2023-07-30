@@ -217,6 +217,18 @@ With this kind of file read, it could be possible to fuzz for common file names.
 
 From the Apache version in the response, it seems like the XAMPP version is `XAMPP release 7.1.28 , 7.2.17 or 7.3.4:` I'll need to find some source for the XAMPP directory tree and try to enumerate where I can find these custom php scripts used on the site.
 
+- https://www.simplilearn.com/tutorials/php-tutorial/php-using-xampp
+```
+## How to Start a New PHP Project in XAMPP?
+
+- Before you run or start writing any program in PHP, you should start Apache and MYSQL. 
+- After starting both servers, you have to write a program in Notepad. 
+- After writing it, save that file as "program.php". 
+- Then copy that file program.php to C:/Program Files/XAMPP/htdocs.
+- Open the browser and type [http://localhost](http://localhost/).
+- Now run your code in that browser.
+```
+
 - https://github.com/xampp-phoenix/xampp
 ```http
 C:\xampp\readme_en.txt
@@ -265,6 +277,31 @@ libraries are installed on your system.
   + Windows 7, Windows 8, Windows 10
 ```
 
+There is some conflict between what the two articles claim is the proper directory for custom php scripts. However, with a bit of playing around and reading the XAMPP Github it's pretty clear that the custom scripts are likely within `htdocs.` I was able to grab the homepage's source code.
 
+```
+HTTP/1.1 200 OK
+Date: Sun, 30 Jul 2023 09:18:30 GMT
+Server: Apache/2.4.39 (Win64) OpenSSL/1.1.1b PHP/7.3.4
+X-Powered-By: PHP/7.3.4
+Connection: close
+Content-Type: text/html; charset=UTF-8
+Content-Length: 8781
+
+<...SNIP...>
+
+					<p class="text-white pt-20 pb-20">
+							E-coin is adecentralized platform that runs smart contracts: applications that run exactly as programmed without 
+							any possibility of downtime, censorship, fraud or third-party interference.
+						</p>
+						<a href="#" class="primary-btn header-btn text-uppercase">Buy E-coin</a>
+
+<...SNIP...>
+```
+
+Since I lost all my notes previously, including directory fuzzing and nmap scans, I simply looked at a writeup for all the available paths :^) (because I'm lazy and I hate waiting for scans to finish... fuck it).  The `/admin/` directory contains the source for `backdoorchecker.php:`
+```
+
+```
 
 
