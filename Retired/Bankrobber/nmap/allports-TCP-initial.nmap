@@ -1,0 +1,11 @@
+# Nmap 7.94 scan initiated Sun Jul 30 02:50:09 2023 as: nmap -p- --min-rate 5000 -oA nmap/allports-TCP-initial 10.10.10.154
+Nmap scan report for 10.10.10.154
+Host is up (0.023s latency).
+Not shown: 65531 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+
+# Nmap done at Sun Jul 30 02:50:36 2023 -- 1 IP address (1 host up) scanned in 26.53 seconds

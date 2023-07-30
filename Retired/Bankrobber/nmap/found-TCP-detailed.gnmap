@@ -1,0 +1,4 @@
+# Nmap 7.94 scan initiated Sun Jul 30 02:53:45 2023 as: nmap -oA nmap/found-TCP-detailed -p80,443,445,3306 -sCV -T4 --min-rate 5000 -Pn 10.10.10.154
+Host: 10.10.10.154 ()	Status: Up
+Host: 10.10.10.154 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.39 ((Win64) OpenSSL|1.1.1b PHP|7.3.4)/, 443/open/tcp//ssl|http//Apache httpd 2.4.39 ((Win64) OpenSSL|1.1.1b PHP|7.3.4)/, 445/open/tcp//microsoft-ds//Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)/, 3306/open/tcp//mysql//MariaDB (unauthorized)/
+# Nmap done at Sun Jul 30 02:54:39 2023 -- 1 IP address (1 host up) scanned in 53.85 seconds

@@ -148,13 +148,19 @@
   },
   "active": "b13fcfd69fecd0fe",
   "lastOpenFiles": [
+    "Retired/Bankrobber/nmap/found-TCP-detailed.xml",
+    "Retired/Bankrobber/nmap/found-TCP-detailed.gnmap",
+    "Retired/Bankrobber/nmap/found-TCP-detailed.nmap",
+    "Retired/Bankrobber/nmap/allports-TCP-initial.xml",
+    "Retired/Bankrobber/nmap/allports-TCP-initial.gnmap",
+    "Retired/Bankrobber/nmap/allports-TCP-initial.nmap",
+    "Retired/Bankrobber/nmap",
     "Retired/Bankrobber/loot/hash.txt",
     "Retired/Bankrobber/loot",
     "Pasted image 20230730021549.png",
     "autopush.sh",
     "README.md",
     "Retired/Bankrobber/00 - Bankrobber.md",
-    "Retired/Bankrobber",
-    "Retired"
+    "Retired/Bankrobber"
   ]
 }
