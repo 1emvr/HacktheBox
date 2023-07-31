@@ -367,4 +367,7 @@ Since I lost all my notes previously, including directory fuzzing and nmap scans
 ?>
 ```
 
-It's pretty obvious that the problem is with the $_SERVER check in `backdoorchecker.php`, where it looks for a localhost ip address. I honestly have no idea how this could be done.
+It's pretty obvious that the problem is with the $_SERVER environment check in `backdoorchecker.php`, where it looks for a localhost ip address. I honestly have no idea how this could be done.
+
+#### The following day...
+Cross site request forgery. Yes, I had a hint. The XSS we had earlier could potentially be used to "bounce a request back" to the admin's localhost, executing our own commands within a payload (I don't know if my analogy makes sense). 
