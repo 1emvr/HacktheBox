@@ -148,19 +148,23 @@
   },
   "active": "b13fcfd69fecd0fe",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "C2/javascript/mailer.js",
+=======
+    "Retired/Bankrobber/exploit/www/payload/x64-meterpreter.exe",
+    "Retired/Bankrobber/exploit/www/x64-meterpreter.exe",
+    "Retired/Bankrobber/exploit/www/payload",
+    "Retired/Bankrobber/exploit/www/mailer.js",
+    "Retired/Bankrobber/exploit/www",
+    "Retired/Bankrobber/exploit/javascript/mailer.js",
+    "Retired/Bankrobber/exploit/javascript",
+    "Retired/Bankrobber/exploit",
+    "Retired/Bankrobber/javascript/mailer.js",
+    "Retired/Bankrobber/javascript",
+>>>>>>> 2e0c511f5fe68e03468643fcc7630df63aa068b7
     "Retired/Bankrobber/credentials.md",
     "Retired/Bankrobber/00 - Bankrobber.md",
     "Retired/Bankrobber/loot/ntlm.txt",
-    "screenshots",
-    "Retired/Bankrobber/nmap/found-TCP-detailed.xml",
-    "Retired/Bankrobber/nmap/found-TCP-detailed.gnmap",
-    "Retired/Bankrobber/nmap/found-TCP-detailed.nmap",
-    "Retired/Bankrobber/nmap/allports-TCP-initial.xml",
-    "Retired/Bankrobber/nmap/allports-TCP-initial.gnmap",
-    "Retired/Bankrobber/nmap/allports-TCP-initial.nmap",
-    "Retired/Bankrobber/nmap",
-    "Retired/Bankrobber/loot/hash.txt",
     "Pasted image 20230730021549.png",
     "README.md"
   ]

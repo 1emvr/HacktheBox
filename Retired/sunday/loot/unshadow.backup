@@ -1,0 +1,24 @@
+root:x:0:0:Super-User:/root:/usr/bin/bash
+daemon:x:1:1::/:/bin/sh
+bin:x:2:2::/:/bin/sh
+sys:x:3:3::/:/bin/sh
+adm:x:4:4:Admin:/var/adm:/bin/sh
+dladm:x:15:65:Datalink Admin:/:
+netadm:x:16:65:Network Admin:/:
+netcfg:x:17:65:Network Configuration Admin:/:
+dhcpserv:x:18:65:DHCP Configuration Admin:/:
+ftp:x:21:21:FTPD Reserved UID:/:
+sshd:x:22:22:sshd privsep:/var/empty:/bin/false
+smmsp:x:25:25:SendMail Message Submission Program:/:
+aiuser:x:61:61:AI User:/:
+ikeuser:x:67:12:IKE Admin:/:
+lp:x:71:8:Line Printer Admin:/:/bin/sh
+openldap:*LK*:75:75:OpenLDAP User:/:/usr/bin/pfbash
+webservd:*LK*:80:80:WebServer Reserved UID:/:/bin/sh
+unknown:x:96:96:Unknown Remote UID:/:/bin/sh
+pkg5srv:x:97:97:pkg(7) server UID:/:
+nobody:*LK*:60001:60001:NFS Anonymous Access User:/:/bin/sh
+noaccess:*LK*:60002:65534:No Access User:/:/bin/sh
+nobody4:*LK*:65534:65534:SunOS 4.x NFS Anonymous Access User:/:/bin/sh
+sammy:$5$Ebkn8jlK$i6SSPa0.u7Gd.0oJOT4T421N2OvsfXqAT1vCoYUOigB:100:10::/home/sammy:/usr/bin/bash
+sunny:$5$iRMbpnBv$Zh7s6D7ColnogCdiVE5Flz9vCZOMkUFxklRhhaShxv3:101:10::/home/sunny:/usr/bin/bash

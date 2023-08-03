@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sat Apr  8 01:14:54 2023 as: nmap -p15973,17496,20323,21121,30179,30596,45658,54145,56627 -sCV -T4 -&#45;min-rate 5000 -oA nmap/detailed-scan-higherports-TCP -Pn 10.10.10.51 -->
+<nmaprun scanner="nmap" args="nmap -p15973,17496,20323,21121,30179,30596,45658,54145,56627 -sCV -T4 -&#45;min-rate 5000 -oA nmap/detailed-scan-higherports-TCP -Pn 10.10.10.51" start="1680930894" startstr="Sat Apr  8 01:14:54 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="9" services="15973,17496,20323,21121,30179,30596,45658,54145,56627"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1680930894" endtime="1680930894"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.51" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="15973"><state state="closed" reason="reset" reason_ttl="63"/></port>
+<port protocol="tcp" portid="17496"><state state="closed" reason="reset" reason_ttl="63"/></port>
+<port protocol="tcp" portid="20323"><state state="closed" reason="reset" reason_ttl="63"/></port>
+<port protocol="tcp" portid="21121"><state state="closed" reason="reset" reason_ttl="63"/></port>
+<port protocol="tcp" portid="30179"><state state="closed" reason="reset" reason_ttl="63"/></port>
+<port protocol="tcp" portid="30596"><state state="closed" reason="reset" reason_ttl="63"/></port>
+<port protocol="tcp" portid="45658"><state state="closed" reason="reset" reason_ttl="63"/></port>
+<port protocol="tcp" portid="54145"><state state="closed" reason="reset" reason_ttl="63"/></port>
+<port protocol="tcp" portid="56627"><state state="closed" reason="reset" reason_ttl="63"/></port>
+</ports>
+<times srtt="87299" rttvar="35333" to="228631"/>
+</host>
+<runstats><finished time="1680930894" timestr="Sat Apr  8 01:14:54 2023" summary="Nmap done at Sat Apr  8 01:14:54 2023; 1 IP address (1 host up) scanned in 0.64 seconds" elapsed="0.64" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

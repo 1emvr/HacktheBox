@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "29877ae33983eb97",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab75c29b5adcd690",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "accb76a080778999",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "da65695382cb5a3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Mango - 10.10.10.162.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1926ec395bea9853",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - Mango.htb - Apache 2.4.29.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9c5344a4f974d25e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - Mango.htb - Apache 2.4.29.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "950f90dc8e2c6b96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10 - staging-order - https.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38097c8bb8bdaf31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "15 - Initial foothold.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e2aecc293e07d6f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe85547d33ce53a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a70d2a9e6c64f3fe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1ae92892c921ea63",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "272ef84087460f6f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "62b66cdbaa6978c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "c6a00f654099e396",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a685f9e0e0a8056",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "15 - Initial foothold.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0d20cbf6352e54a4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "15 - Initial foothold.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b88a08200b15a4e3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "38bfafc9ae5ed876",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "15 - Initial foothold.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "38097c8bb8bdaf31",
+  "lastOpenFiles": [
+    "Pasted image 20230503230157.png",
+    "Pasted image 20230503230054.png",
+    "Pasted image 20230503225727.png",
+    "Pasted image 20230503224922.png",
+    "Credentials.md",
+    "15 - Initial foothold.md",
+    "Pasted image 20230503224745.png",
+    "Pasted image 20230503223921.png",
+    "Pasted image 20230503223541.png",
+    "Pasted image 20230503223328.png",
+    "Pasted image 20230503215152.png",
+    "10 - staging-order - https.md",
+    "00 - Mango - 10.10.10.162.md",
+    "Pasted image 20230503215044.png",
+    "Pasted image 20230503214717.png",
+    "exploit/blind-nosql2.py",
+    "exploit/blind-nosql.py",
+    "05 - Mango.htb - Apache 2.4.29.md",
+    "nmap/initial-scan-allports-TCP.xml",
+    "nmap/initial-scan-allports-TCP.gnmap",
+    "nmap/initial-scan-allports-TCP.nmap"
+  ]
+}

@@ -1,0 +1,17 @@
+# Nmap 7.93 scan initiated Sat Apr  8 01:14:54 2023 as: nmap -p15973,17496,20323,21121,30179,30596,45658,54145,56627 -sCV -T4 --min-rate 5000 -oA nmap/detailed-scan-higherports-TCP -Pn 10.10.10.51
+Nmap scan report for 10.10.10.51
+Host is up (0.087s latency).
+
+PORT      STATE  SERVICE VERSION
+15973/tcp closed unknown
+17496/tcp closed unknown
+20323/tcp closed unknown
+21121/tcp closed unknown
+30179/tcp closed unknown
+30596/tcp closed unknown
+45658/tcp closed unknown
+54145/tcp closed unknown
+56627/tcp closed unknown
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr  8 01:14:54 2023 -- 1 IP address (1 host up) scanned in 0.64 seconds
