@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Wed May  3 17:47:54 2023 as: nmap -p- -T4 --min-rate 8000 -oA nmap/initial-scan-allports-TCP -Pn 10.10.10.60
+Host: 10.10.10.60 ()	Status: Up
+Host: 10.10.10.60 ()	Ports: 80/open/tcp//http///, 443/open/tcp//https///	Ignored State: filtered (65533)
+# Nmap done at Wed May  3 17:48:10 2023 -- 1 IP address (1 host up) scanned in 16.73 seconds

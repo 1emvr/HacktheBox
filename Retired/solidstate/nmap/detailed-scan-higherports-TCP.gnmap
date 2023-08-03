@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Sat Apr  8 01:14:54 2023 as: nmap -p15973,17496,20323,21121,30179,30596,45658,54145,56627 -sCV -T4 --min-rate 5000 -oA nmap/detailed-scan-higherports-TCP -Pn 10.10.10.51
+Host: 10.10.10.51 ()	Status: Up
+Host: 10.10.10.51 ()	Ports: 15973/closed/tcp/////, 17496/closed/tcp/////, 20323/closed/tcp/////, 21121/closed/tcp/////, 30179/closed/tcp/////, 30596/closed/tcp/////, 45658/closed/tcp/////, 54145/closed/tcp/////, 56627/closed/tcp/////
+# Nmap done at Sat Apr  8 01:14:54 2023 -- 1 IP address (1 host up) scanned in 0.64 seconds
