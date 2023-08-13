@@ -1,9 +1,0 @@
-# Nmap 7.93 scan initiated Wed Apr  5 21:04:20 2023 as: nmap -p- -T4 --min-rate 5000 -oA nmap/initial-scan-allports-TCP 10.10.10.43
-Nmap scan report for 10.10.10.43
-Host is up (0.045s latency).
-Not shown: 65533 filtered tcp ports (no-response)
-PORT    STATE SERVICE
-80/tcp  open  http
-443/tcp open  https
-
-# Nmap done at Wed Apr  5 21:04:47 2023 -- 1 IP address (1 host up) scanned in 26.64 seconds

@@ -1,4 +1,0 @@
-# Nmap 7.93 scan initiated Tue May  2 20:44:59 2023 as: nmap -p79,111,515,6787,22022 -sCV -T4 --min-rate 8000 -oA nmap/detailed-scan-allports-TCP 10.10.10.76
-Host: 10.10.10.76 ()	Status: Up
-Host: 10.10.10.76 ()	Ports: 79/open/tcp//finger?///, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 515/open/tcp//printer///, 6787/open/tcp//ssl|http//Apache httpd 2.4.33 ((Unix) OpenSSL|1.0.2o mod_wsgi|4.5.1 Python|2.7.14)/, 22022/open/tcp//ssh//OpenSSH 7.5 (protocol 2.0)/
-# Nmap done at Tue May  2 20:46:37 2023 -- 1 IP address (1 host up) scanned in 98.16 seconds

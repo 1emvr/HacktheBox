@@ -1,5 +1,0 @@
-```
-admin@mango.htb
-mango:h3mXK8RhU~f{]f5H
-admin:t9KcS3>!0B#2
-```

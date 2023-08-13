@@ -1,3 +1,0 @@
-200      GET        9l       13w      137c http://shocker.htb/
-403      GET       11l       32w      291c http://shocker.htb/.html
-200      GET        7l       17w      118c http://shocker.htb/cgi-bin/user.sh

@@ -1,9 +1,0 @@
-# Nmap 7.93 scan initiated Wed Apr  5 18:06:15 2023 as: nmap -sT -p- -T4 --min-rate 5000 -oA nmap/initial-scan-allports-TCP shocker.htb
-Warning: 10.10.10.56 giving up on port because retransmission cap hit (6).
-Nmap scan report for shocker.htb (10.10.10.56)
-Host is up (0.056s latency).
-Not shown: 40841 filtered tcp ports (no-response), 24693 closed tcp ports (conn-refused)
-PORT   STATE SERVICE
-80/tcp open  http
-
-# Nmap done at Wed Apr  5 18:07:28 2023 -- 1 IP address (1 host up) scanned in 73.00 seconds

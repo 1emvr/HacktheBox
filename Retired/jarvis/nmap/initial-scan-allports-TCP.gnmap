@@ -1,4 +1,0 @@
-# Nmap 7.93 scan initiated Wed May  3 23:06:42 2023 as: nmap -p22,80 -T4 -sCV --min-rate 8000 -oA nmap/initial-scan-allports-TCP -Pn 10.10.10.143
-Host: 10.10.10.143 ()	Status: Up
-Host: 10.10.10.143 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/
-# Nmap done at Wed May  3 23:06:53 2023 -- 1 IP address (1 host up) scanned in 10.53 seconds

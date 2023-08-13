@@ -1,4 +1,0 @@
-# Nmap 7.93 scan initiated Wed Apr  5 18:06:15 2023 as: nmap -sT -p- -T4 --min-rate 5000 -oA nmap/initial-scan-allports-TCP shocker.htb
-Host: 10.10.10.56 (shocker.htb)	Status: Up
-Host: 10.10.10.56 (shocker.htb)	Ports: 80/open/tcp//http///
-# Nmap done at Wed Apr  5 18:07:28 2023 -- 1 IP address (1 host up) scanned in 73.00 seconds

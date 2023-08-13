@@ -1,8 +1,0 @@
-# Nmap 7.93 scan initiated Wed Apr  5 18:03:30 2023 as: nmap -sU -p- -T4 --min-rate 5000 -oA nmap/initial-scan-allports-UDP shocker.htb
-Warning: 10.10.10.56 giving up on port because retransmission cap hit (6).
-Nmap scan report for shocker.htb (10.10.10.56)
-Host is up (0.59s latency).
-All 65535 scanned ports on shocker.htb (10.10.10.56) are in ignored states.
-Not shown: 65435 open|filtered udp ports (no-response), 100 closed udp ports (port-unreach)
-
-# Nmap done at Wed Apr  5 18:05:07 2023 -- 1 IP address (1 host up) scanned in 96.43 seconds
