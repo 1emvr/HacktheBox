@@ -372,7 +372,6 @@ It's pretty obvious that the One thing that stands out is with the $_SERVER envi
 #### The following day...
 Cross site request forgery... Yes, I had a hint. The XSS we had earlier could potentially be used to "bounce a request back" (I don't know if my analogy makes sense) to the admin's localhost, from himself, executing our own commands within a payload. There's no cross-origin policy or CSRF-Token implemented so it's possible.
 
-<<<<<<< HEAD
 Once bankrobber-server reaches back to my server for the javascript, it should execute any command.  This one was a bit challenging. I had never done CSRF before and needed to figure out how exactly sending the commands would work. 
 - https://portswigger.net/web-security/csrf
 
